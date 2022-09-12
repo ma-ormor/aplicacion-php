@@ -2,7 +2,7 @@
   class CatalogoDao{
     private $server = "localhost";
     private $usr = "root";
-    private $pass = "";
+    private $pass = "pass";
     private $db = "catalogo_musica";
 
     private function conectar(){
