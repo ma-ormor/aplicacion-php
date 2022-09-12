@@ -1,4 +1,4 @@
-<?php header("Location: Vista/Canciones.php"); ?>
+<?php header("Location: Vista/canciones.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en">
