@@ -6,7 +6,7 @@ $nombre = $_POST['alias'];
 $contrasena = $_POST['contrasena'];
 
 $seleccionar = "
-  Select count(*) from Usuario 
+  Select count(*) from usuario 
   where u_nombre like '".$nombre."' and u_contrasena like '".$contrasena."'"
 ;
 
@@ -25,7 +25,7 @@ function iniciarSesion($nombre, $datos){
 }
 
 function seleccionarId($nombre, $datos){
-  $seleccionar = "Select u_id from Usuario where u_nombre like '".$nombre."'";
+  $seleccionar = "Select u_id from usuario where u_nombre like '".$nombre."'";
 
   $resultado = $datos->consulta($seleccionar);
   $resultado->data_seek(0);

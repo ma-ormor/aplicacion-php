@@ -8,7 +8,7 @@ function mostrarFavoritos(){
 
 $buscado = $_POST; 
 $datos = new CatalogoDao();
-$seleccionar = "Select * from Artista";
+$seleccionar = "Select * from artista";
 
 session_start();
 

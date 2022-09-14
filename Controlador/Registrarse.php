@@ -5,7 +5,7 @@ $datos = new CatalogoDao();
 $nombre = $_POST['alias'];
 $contrasena = $_POST['contrasena'];
 $registrar = "
-  Insert into Usuario (u_nombre, u_contrasena) 
+  Insert into usuario (u_nombre, u_contrasena) 
   values ('".$nombre."', '".$contrasena."')
 ";
 // $seleccionar = "

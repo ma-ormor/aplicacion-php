@@ -3,7 +3,7 @@ include("../Persistencia/CatalogoDao.php");
 
 $buscado = $_POST; 
 $datos = new CatalogoDao();
-$seleccionar = "Select * from Productor";
+$seleccionar = "Select * from productor";
 
 session_start();
 

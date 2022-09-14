@@ -7,7 +7,7 @@ function mostrarFavoritos(){
 }
 
 $datos = new CatalogoDao();
-$seleccionar = "Select * from Album";
+$seleccionar = "Select * from album";
 
 session_start();
 

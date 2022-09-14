@@ -8,7 +8,7 @@ if(isset($_POST['productor'])){
 }else if(isset($_POST['artista'])){
   $seleccionar = seleccionarPorAr($_POST['artista']);
 }else $seleccionar = "
-  Select distinct c.*, al.al_nombre from Cancion c
+  Select distinct c.*, al.al_nombre from cancion c
   join cancion_esta_album ca 
   join album al 
   on c.c_id = ca.c_id and ca.al_id = al.al_id
@@ -16,7 +16,7 @@ if(isset($_POST['productor'])){
 
 function seleccionarPorAl($buscado){
   return '
-    Select distinct c.*, al_nombre from Cancion c
+    Select distinct c.*, al_nombre from cancion c
     join cancion_esta_album cal
     join album al
     on c.c_id = cal.c_id and al.al_id = cal.al_id
@@ -26,7 +26,7 @@ function seleccionarPorAl($buscado){
 
 function seleccionarPorAr($buscado){
   return '
-    Select distinct c.*, al.al_nombre from Cancion c
+    Select distinct c.*, al.al_nombre from cancion c
     join artista_tiene_cancion ac
     join cancion_esta_album ca 
     join album al
@@ -37,7 +37,7 @@ function seleccionarPorAr($buscado){
 
 function seleccionarPorDi($buscado){
   return '
-    Select distinct c.*, al.al_nombre from Cancion c
+    Select distinct c.*, al.al_nombre from cancion c
     join cancion_esta_album ca 
     join album al 
     on c.c_id = ca.c_id and ca.al_id = al.al_id

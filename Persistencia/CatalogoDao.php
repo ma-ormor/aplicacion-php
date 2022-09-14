@@ -1,12 +1,17 @@
 <?php
   class CatalogoDao{
-    private $server = "localhost";
-    private $usr = "root";
+    private $server = "192.168.100.50:3306"; //localhost
+    private $usr = "ad_cm";
     private $pass = "pass";
     private $db = "catalogo_musica";
 
     private function conectar(){
-      $mysqli = new mysqli($this->server, $this->usr, $this->pass, $this->db);
+      try{
+        $mysqli = new mysqli($this->server, $this->usr, $this->pass, $this->db);
+      }catch(RuntimeException $re){
+        echo($re->getMessage());
+      }
+
       return $mysqli;
     }
 

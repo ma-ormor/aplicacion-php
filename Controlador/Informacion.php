@@ -31,7 +31,7 @@ $seleccionarAr = "
   where c.c_id = ".$idCancion."
 ";
 $seleccionar = "
-  Select c.*, al.al_nombre, a.a_nombre from Cancion c
+  Select c.*, al.al_nombre, a.a_nombre from cancion c
   join cancion_esta_album ca 
   join album al 
   join artista a

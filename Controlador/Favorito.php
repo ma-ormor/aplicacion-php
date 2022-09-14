@@ -13,7 +13,7 @@ if(!isset($_SESSION['u_id'])) header("Location: ../Vista/canciones.php");
 $datos = new CatalogoDao();
 $idUsuario = $_SESSION['u_id'];
 $seleccionar = "
-  Select distinct c.*, al.al_nombre from Cancion c
+  Select distinct c.*, al.al_nombre from cancion c
   join favoritos f 
   join cancion_esta_album ca
   join album al
