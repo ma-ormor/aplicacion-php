@@ -1,6 +1,6 @@
 <?php
   class CatalogoDao{
-    private $server = "192.168.100.50:3306"; //localhost
+    private $server = "localhost"; //localhost
     private $usr = "ad_cm";
     private $pass = "pass";
     private $db = "catalogo_musica";
