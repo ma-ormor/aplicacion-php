@@ -32,7 +32,7 @@
         <a href="../Vista/albumes.php">Albumes</a>
         <a href="../Vista/artistas.php">Artistas</a>
         <a href="../Vista/productores.php">Disqueras</a> <?php mostrarFavoritos(); ?>
-        <a href="../vista/login.php"><?php echo $sesion; ?></a>
+        <a href="../Vista/login.php"><?php echo $sesion; ?></a>
       </nav>
     </div>
   </header>  
